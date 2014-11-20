@@ -49,24 +49,24 @@ hr {
   overflow: auto;
   box-shadow: 3px 3px 5px #ddd;
   position: relative;
-  z-index: 1000; }
+  z-index: 1000;
+  vertical-align: 40px; }
 
-/* line 46, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
+/* line 47, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 .cat-container {
   position: relative; }
 
-/* line 49, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
+/* line 50, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 .cat {
   position: absolute;
   left: 480px;
   bottom: 0px;
   z-index: 1;
-  transition: all 10s linear;
-  -webkit-transition: all 10s linear; }
+  transition: bottom 10s linear;
+  -webkit-transition: bottom 10s linear; }
 
-/* line 57, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
+/* line 58, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 .cat:hover {
-  left: 480px;
   bottom: 100px; }
 
 /* line 61, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
@@ -156,3 +156,7 @@ input[type=text]:focus {
 .emoji img:hover {
   opacity: 1;
   transform: scale(1.1, 1.1); }
+
+/* line 139, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
+.small-emoji {
+  width: 25px; }
