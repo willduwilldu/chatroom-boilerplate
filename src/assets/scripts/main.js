@@ -25,7 +25,7 @@ jQuery(function($) {
     //     console.log(text);
     // };
 
-var text;
+    var text;
 
     //Send a message to the server
     $('.send').on('click',function(){
@@ -47,12 +47,6 @@ var text;
     });
 });
 
-
-// $(document).ready(function(){
-//   $("#smile").click(function(){
-//     // $(".emoji").toggle();
-//   });
-// });
 
 
 
