@@ -43,7 +43,7 @@ jQuery(function($) {
     });
     $('img').on('click',function(){
         $('input').val($('input').val()+this.className);
-        $(".emoji").toggle([400]);
+        $(".emoji").toggle([200]);
     });
 });
 

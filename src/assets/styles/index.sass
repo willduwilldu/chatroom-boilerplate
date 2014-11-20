@@ -1,8 +1,7 @@
 body 
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+	font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif
 	font-weight: 300
 	background: #eee
-
 
 h1
 	color: #999
@@ -11,31 +10,25 @@ h1
 	margin: 0
 	color: #e67e22
 
-
 .logo img 
 	max-width: 519px
 	width: 100%
 
-
 hr 
 	border: 1px solid #eee
-
 
 .wrapper 
 	width: 100%
 	max-width: 720px
 	margin: 0 auto
 
-
 .logo 
 	padding: 50px 0 75px 0
 	text-align: center
 
-
 .logo-main 
 	display: block
 	margin: 0 auto
-
 
 .messages 
 	padding: 15px
@@ -47,7 +40,6 @@ hr
 	min-height:200px
 	overflow: auto
 	box-shadow: 3px 3px 5px #ddd
-
 
 a.send 
 	display:inline-block
@@ -62,7 +54,6 @@ a.send
 	vertical-align: middle
 	border-bottom: 5px solid #27ae60
 
-
 input 
 	color: #666
 	margin: 0px 15px 15px 0
@@ -75,66 +66,58 @@ input
 	padding: 5px 15px
 	border: none
 	border-radius: 7px
-  	outline: none
-  	border: 1px solid #e67e22
-  	transition: all 0.30s ease-in-out
-  	-webkit-transition: box-shadow 0.30s ease-in-out
-  	-moz-transition: box-shadow 0.30s ease-in-out
-  	-ms-transition: box-shadow 0.30s ease-in-out
-  	-o-transition: box-shadow 0.30s ease-in-out
-
+	outline: none
+	border: 1px solid #e67e22
+	transition: all 0.30s ease-in-out
+	-webkit-transition: box-shadow 0.30s ease-in-out
 
 input[type=text]:focus 
 	box-shadow: 0 0 5px rgba(230, 126, 34, 1)
 	border: 1px solid rgba(230, 126, 34, 1)
 
-
 .chat 
 	position: relative
 	margin-top: 15px
-
 
 #smile 
 	margin-right: 10px
 	float: left
 	display: inline-block
 
-
 #smile img 
 	cursor: pointer
 	width: 40px
+	transform: scale (1,1)
+	transition: transform 0.30s ease-in-out
+	-webkit-transition: transform 0.30s ease-in-out
 
+#smile img:hover
+	transform: scale(1.1,1.1)
 
 .emoji 
 	display: none
-	max-width: 450px
+	max-width: 150px
 	width: 100%
 	padding: 10px 15px
 	border-radius: 7px
 	box-shadow: 3px 3px 5px #ddd
 	background: #fff
 	position: absolute
-	left: 0px
-	top: 50px
-
+	right: 736px
+	bottom: 16px
 
 .emoji img 
-	-webkit-transition: opacity 0.30s ease-in-out
-  	-moz-transition: opacity 0.30s ease-in-out
-  	-ms-transition: opacity 0.30s ease-in-out
-  	-o-transition: opacity 0.30s ease-in-out
-  	opacity: .7
+	opacity: .7
 	width: 40px
 	padding: 5px
 	cursor: pointer
-
+	transform: scale (1,1)
+	transition: transform 0.20s ease-in-out
+	-webkit-transition: all 0.20s ease-in-out
 
 .emoji img:hover 
-	-webkit-transition: opacity 0.30s ease-in-out
-  	-moz-transition: opacity 0.30s ease-in-out
-  	-ms-transition: opacity 0.30s ease-in-out
-  	-o-transition: opacity 0.30s ease-in-out
-  	opacity: 1
+	opacity: 1
+	transform: scale(1.1,1.1)
 
 
 

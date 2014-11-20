@@ -1,8 +1,10 @@
+/* line 1, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
   font-weight: 300;
   background: #eee; }
 
+/* line 6, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 h1 {
   color: #999;
   font-size: 18px;
@@ -10,26 +12,32 @@ h1 {
   margin: 0;
   color: #e67e22; }
 
+/* line 13, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 .logo img {
   max-width: 519px;
   width: 100%; }
 
+/* line 17, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 hr {
   border: 1px solid #eee; }
 
+/* line 20, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 .wrapper {
   width: 100%;
   max-width: 720px;
   margin: 0 auto; }
 
+/* line 25, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 .logo {
   padding: 50px 0 75px 0;
   text-align: center; }
 
+/* line 29, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 .logo-main {
   display: block;
   margin: 0 auto; }
 
+/* line 33, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 .messages {
   padding: 15px;
   display: block;
@@ -41,6 +49,7 @@ hr {
   overflow: auto;
   box-shadow: 3px 3px 5px #ddd; }
 
+/* line 44, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 a.send {
   display: inline-block;
   padding: 5px 15px;
@@ -54,6 +63,7 @@ a.send {
   vertical-align: middle;
   border-bottom: 5px solid #27ae60; }
 
+/* line 57, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 input {
   color: #666;
   margin: 0px 15px 15px 0;
@@ -69,53 +79,60 @@ input {
   outline: none;
   border: 1px solid #e67e22;
   transition: all 0.3s ease-in-out;
-  -webkit-transition: box-shadow 0.3s ease-in-out;
-  -moz-transition: box-shadow 0.3s ease-in-out;
-  -ms-transition: box-shadow 0.3s ease-in-out;
-  -o-transition: box-shadow 0.3s ease-in-out; }
+  -webkit-transition: box-shadow 0.3s ease-in-out; }
 
+/* line 74, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 input[type=text]:focus {
   box-shadow: 0 0 5px #e67e22;
   border: 1px solid #e67e22; }
 
+/* line 78, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 .chat {
   position: relative;
   margin-top: 15px; }
 
+/* line 82, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 #smile {
   margin-right: 10px;
   float: left;
   display: inline-block; }
 
+/* line 87, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 #smile img {
   cursor: pointer;
-  width: 40px; }
+  width: 40px;
+  transform: scale 1, 1;
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out; }
 
+/* line 94, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
+#smile img:hover {
+  transform: scale(1.1, 1.1); }
+
+/* line 97, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 .emoji {
   display: none;
-  max-width: 450px;
+  max-width: 150px;
   width: 100%;
   padding: 10px 15px;
   border-radius: 7px;
   box-shadow: 3px 3px 5px #ddd;
   background: #fff;
   position: absolute;
-  left: 0px;
-  top: 50px; }
+  right: 736px;
+  bottom: 16px; }
 
+/* line 109, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 .emoji img {
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -ms-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
   opacity: 0.7;
   width: 40px;
   padding: 5px;
-  cursor: pointer; }
+  cursor: pointer;
+  transform: scale 1, 1;
+  transition: transform 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out; }
 
+/* line 118, /Users/williamd/Desktop/chatroom-boilerplate/src/assets/styles/index.sass */
 .emoji img:hover {
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -ms-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  opacity: 1; }
+  opacity: 1;
+  transform: scale(1.1, 1.1); }
