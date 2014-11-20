@@ -19,13 +19,16 @@ html
 
   .wrapper
 
-    h1 I am awesome Chat Server!
+    div.logo
+        img(src="assets/images/logo.png" class="logo-main")
+
+        h1 Connect with anyone and start chatting!
 
     div.messages
 
-    input(type="text")
+    input(type="text" placeholder='Write a message...')
 
-    a(href="#") Send a Message
+    a(href="#" class="send") Send a Message
 
     <br>
 

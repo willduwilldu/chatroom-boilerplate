@@ -19,7 +19,7 @@ io.on('connection', function(socket){
   console.log('A User Connected');
 
   socket.on('message',function(text){  //emit an update event that passes the text
-  	io.emit('update',text + '<br>'); //server recieves message, and then sends it back out in a event called update
+  	io.emit('update',text + '<br>' + '<hr>'); //server recieves message, and then sends it back out in a event called update
   });
 
 });

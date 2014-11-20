@@ -1,29 +1,71 @@
 body {
-  font-family: sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
   background: #eee; }
+
+h1 {
+  color: #999;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  color: #e67e22; }
+
+hr {
+  border: 1px solid #eee; }
 
 .wrapper {
   width: 100%;
-  max-width: 960px;
+  max-width: 720px;
+  margin: 0 auto; }
+
+.logo {
+  padding: 50px 0 75px 0;
+  text-align: center; }
+
+.logo-main {
+  display: block;
   margin: 0 auto; }
 
 .messages {
+  padding: 15px;
   display: block;
-  border: 1px solid gray;
+  margin: 0 auto;
+  border-radius: 7px;
+  background: #fff;
   width: 100%;
-  min-height: 100px; }
+  min-height: 200px;
+  overflow: auto;
+  box-shadow: 3px 3px 5px #ddd; }
 
-a {
+a.send {
   display: inline-block;
   padding: 5px 15px;
   text-decoration: none;
-  border: 1px solid gray;
-  line-height: 100%; }
+  border: none;
+  height: 25px;
+  line-height: 25px;
+  background: #2ecc71;
+  border-radius: 7px;
+  color: #fff;
+  vertical-align: middle; }
 
 input {
+  margin: 15px 15px 15px 0;
   width: 360px;
-  line-height: 100%;
+  line-height: 25px;
+  height: 25px;
   font-size: 14px;
   display: inline-block;
   padding: 5px 15px;
-  border: 1px solid gray; }
+  border: none;
+  border-radius: 7px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+  border: 1px solid #e67e22; }
+
+input[type=text]:focus {
+  box-shadow: 0 0 5px #e67e22;
+  border: 1px solid #e67e22; }
