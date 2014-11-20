@@ -47,13 +47,14 @@ a.send {
   background: #2ecc71;
   border-radius: 7px;
   color: #fff;
-  vertical-align: middle; }
+  vertical-align: middle;
+  border-bottom: 5px solid #27ae60; }
 
 input {
   margin: 15px 15px 15px 0;
   width: 360px;
-  line-height: 25px;
-  height: 25px;
+  line-height: 30px;
+  height: 30px;
   font-size: 14px;
   display: inline-block;
   padding: 5px 15px;
