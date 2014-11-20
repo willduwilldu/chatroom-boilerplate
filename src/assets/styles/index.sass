@@ -1,7 +1,7 @@
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
-  background: #eee;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	background: #eee;
 }
 
 h1 {
@@ -46,7 +46,9 @@ hr {
 	width:95%;
 	min-height:200px;
 	overflow: auto;
-	box-shadow: 3px 3px 5px #ddd;
+	// box-shadow: 3px 3px 5px #ddd;
+    -webkit-box-shadow: inset 0 0 7px #999;
+    box-shadow:         inset 0 0 7px #999;
 }
 
 a.send {
@@ -78,10 +80,10 @@ input {
   	outline: none;
   	border: 1px solid #e67e22;
   	transition: all 0.30s ease-in-out;
-  	-webkit-transition: all 0.30s ease-in-out;
-  	-moz-transition: all 0.30s ease-in-out;
-  	-ms-transition: all 0.30s ease-in-out;
-  	-o-transition: all 0.30s ease-in-out;
+  	-webkit-transition: box-shadow 0.30s ease-in-out;
+  	-moz-transition: box-shadow 0.30s ease-in-out;
+  	-ms-transition: box-shadow 0.30s ease-in-out;
+  	-o-transition: box-shadow 0.30s ease-in-out;
 }
 
 input[type=text]:focus {
