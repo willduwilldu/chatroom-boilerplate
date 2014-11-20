@@ -26,22 +26,25 @@ html
 
     div.messages
 
-    input(type="text" placeholder='Write a message...')
+    div.chat
 
-    a(href="#" class="send") Send a Message
+        a(id="smile")
+            img(src="assets/images/1f604.png")
 
-    <br>
+        div.emoji
+            img(src="assets/images/1f637.png" class="sick") 
+            img(src="assets/images/1f621.png" class=">:(") 
+            img(src="assets/images/1f613.png" class=":/") 
+            img(src="assets/images/1f609.png" class=";D") 
+            img(src="assets/images/1f604.png" class=":)") 
+            img(src="assets/images/1f603.png" class='=)') 
+            img(src="assets/images/1f601.png" class="D:") 
+            img(src="assets/images/1f62d.png" class="T.T") 
+            img(src="assets/images/1f61c.png" class="o.0") 
 
-    div.emoji
-        img(src="assets/images/1f637.png" class="sick") 
-        img(src="assets/images/1f621.png" class=">:(") 
-        img(src="assets/images/1f613.png" class=":/") 
-        img(src="assets/images/1f609.png" class=";D") 
-        img(src="assets/images/1f604.png" class=":)") 
-        img(src="assets/images/1f603.png" class='=)') 
-        img(src="assets/images/1f601.png" class="D:") 
-        img(src="assets/images/1f62d.png" class="T.T") 
-        img(src="assets/images/1f61c.png" class="o.0") 
+        input(type="text" placeholder='Write a message...')
+
+        a(href="#" class="send") Send a Message
 
 
     script(type="text/javascript", src="https://code.jquery.com/jquery-2.1.1.min.js")
@@ -49,3 +52,4 @@ html
     script(type="text/javascript", src="https://cdn.socket.io/socket.io-1.1.0.js")
     
     script(type="text/javascript", src="assets/scripts/main.js")
+

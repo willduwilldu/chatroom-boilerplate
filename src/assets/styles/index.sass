@@ -64,7 +64,8 @@ a.send {
 }
 
 input {
-	margin: 15px 15px 15px 0;
+	color: #666;
+	margin: 0px 15px 15px 0;
 	max-width:360px;
 	width: 95%;
 	line-height:30px;
@@ -74,12 +75,12 @@ input {
 	padding: 5px 15px;
 	border: none;
 	border-radius: 7px;
-	-webkit-transition: border 0.30s ease-in-out;
-  	-moz-transition: border 0.30s ease-in-out;
-  	-ms-transition: border 0.30s ease-in-out;
-  	-o-transition: border 0.30s ease-in-out;
   	outline: none;
   	border: 1px solid #e67e22;
+  	-webkit-transition: all 0.30s ease-in-out;
+  	-moz-transition: all 0.30s ease-in-out;
+  	-ms-transition: all 0.30s ease-in-out;
+  	-o-transition: all 0.30s ease-in-out;
 }
 
 input[type=text]:focus {
@@ -87,13 +88,33 @@ input[type=text]:focus {
   border: 1px solid rgba(230, 126, 34, 1);
 }
 
+.chat {
+	position: relative;
+	margin-top: 15px;
+}
+
+#smile {
+	margin-right: 10px;
+	float: left;
+	display: inline-block;
+}
+
+#smile img {
+	cursor: pointer;
+	width: 40px;
+}
+
 .emoji {
-	max-width: 150px;
+	display: none;
+	max-width: 450px;
 	width: 100%;
-	padding: 15px;
+	padding: 10px 15px;
 	border-radius: 7px;
 	box-shadow: 3px 3px 5px #ddd;
 	background: #fff;
+	position: absolute;
+	left: 0px;
+	top: 50px;
 }
 
 .emoji img {
